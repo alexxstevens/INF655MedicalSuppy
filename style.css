@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+div.wrapper {
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* footer styling */
+footer {
+  background-color: RGB(54,174,216);
+  overflow: hidden;
+}
+
+button.btn {
+  background-color: white;
+  border-radius: 0;
+  color: black;
+  font-weight: bold;
+  border: 1px solid darkgrey;
+}
+
+button.btn:hover {
+  background-color: lightgrey;
+}
+
+ul.footer {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+ul.footer li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+ul.footer li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+ul.footer li a:hover{
+  color: black;
+}
+
+img.footer {
+padding-left: 20px;
+padding-right: 0px;
+}
+
+
+footer div.call {
+  padding-top: 5px;
+  height: 40px;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+    text-align: left;
+}
+
+
+/* content styling */
+.content-cubes {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+.item a {
+  color: RGB(54,174,216);
+}
+
+.item:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.item img {
+  max-width: 290px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+td.space {
+  width: 20px;
+}
+
+.end {
+  text-align: center;
+}
+ 
+.mobile {
+  display: none;
+}
+
+table {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages styling */
+.home-pages {
+    height: 60vh;
+    background-image: url(images/jumbopages.png);
+    background-position: center top;
+    background-size:cover;
+}
+
+section.home-pages div.title {
+  position: absolute;  
+  color: white;
+  font-weight: bold;
+  top: 25%;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+div.title h1 {
+  font-size: 5rem;
+  text-shadow: 2px 2px #5eafcc;
+}
+
+div.title button {
+  box-shadow: 1px 1px 1px darkgrey;
+  color: #36aed8;
+}
+
+div.title button:hover {
+  color: #36aed8;
+  background-color: white;
+}
+
+
+
+
+/* window styling */
+
+div#aboutWindow {
+  background-color: teal;
+
+}
+
+div.hiddenWindow{
+  display: none;
+}
+
+div.showWindow {
+  position: absolute;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:750px) {
+
+  .hidden {
+    font: #000000;
+    display: none;
+  }
+
+  section.content {
+    display: none;
+  }
+
+  section.mobile {
+    text-align: center;
+  }
+
+  .space {
+    display: none;
+  }
+
+
+  .mobile {
+    display: initial;
+  }
+
+  div.center {
+    text-align: center;
+  }
+
+  p.mobile {
+    font-weight: bold;
+    color: white;
+  }
+
+  footer {
+    background-color: black;
+  }}
