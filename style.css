@@ -152,61 +152,129 @@ table {
 
 /* pages styling */
 .home-pages {
-    height: 60vh;
+    height: 50vh;
     background-image: url(images/jumbopages.png);
     background-position: center top;
     background-size:cover;
+    border-bottom: 1px solid lightgrey;
 }
 
 section.home-pages div.title {
   position: absolute;  
-  color: white;
+  color: rgb(56, 56, 56);
   font-weight: bold;
-  top: 25%;
+  top: 20%;
   text-align: center;
   width: 100%;
   padding: 0;
 }
 
 div.title h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   text-shadow: 2px 2px #5eafcc;
 }
 
 div.title button {
-  box-shadow: 1px 1px 1px darkgrey;
-  color: #36aed8;
+  box-shadow: 1px 1px 1px #36aed8;
+  border: white;
+  color: rgb(56, 56, 56);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+
 }
 
 div.title button:hover {
   color: #36aed8;
   background-color: white;
+  box-shadow: 3px 3px 3px #36aed8;
 }
 
 
-
-
-/* window styling */
-
-div#aboutWindow {
-  background-color: teal;
-
-}
-
-div.hiddenWindow{
-  display: none;
-}
-
-div.showWindow {
-  position: absolute;
-  background-color: black;
-  color: white;
-  overflow: hidden;
-}
-
-.modal-title {
+/* about section */
+#about-content {
   text-align: center;
 }
+
+div.icons {
+  width: 65%;
+}
+
+#about-content h2 {
+  font-size: 2.5em;
+}
+
+#about-content img {
+  margin-bottom: 20px;
+}
+
+#about-content div.col-sm-4 {
+  font-size: .8em;
+}
+
+#about-content p.icon {
+display:inline-block;
+}
+
+div#accordion {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .6em;
+  width: 40vw;
+} 
+
+p.learnMore {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+}
+
+div.panel-body {
+  font-size: 1.6em;
+}
+
+div.panel-default {
+  text-align: left;
+}
+
+#about-content a.nostyle {
+  color: #36aed8;
+}
+
+div.panel-heading {
+  background-color: aliceblue;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+/* blockquote styling */
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #36aed8;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+blockquote:before {
+  color: #36add848;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
+
 
 
 
@@ -255,4 +323,20 @@ div.showWindow {
 
   footer {
     background-color: black;
-  }}
+  }
+
+div#accordion {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .4em;
+  width: 90vw;
+} 
+
+p.learnMore {
+  font-size: 1em;
+}
+
+div.panel-body {
+  font-size: 2em;
+}
+}
