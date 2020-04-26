@@ -1,20 +1,14 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en-US">
 
 <!-- head -->
-
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width" name="viewport">
   <title>Pacific Northwest X-Ray, Inc.</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="../navstyle.css">
   <link rel="stylesheet" type="text/css" href="../style.css">
 
@@ -23,7 +17,40 @@
 <!-- body -->
 
 <body>
-  <div id="wrapper">
+
+
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Why Pacific Northwest X-Ray, Inc.?</h4>
+        </div>
+        <div class="modal-body">
+          <p>X-Ray and Radiology? You are at the source! Here you will find hundreds
+          of pages of X-Ray related accessories, parts, supplies, and equipment.
+          Accessories from Lead Aprons to Lead Markers and X-Ray equipment
+          including portables. Not to mention X-Ray parts.
+          
+          Be sure to keep checking back as our web design team is constantly updating
+          the information on the current items and adding new products as they become
+          available.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div id="wrapper"></div>
     <!-- nav -->
     <nav class="nav affix">
       <div class="container">
@@ -49,45 +76,22 @@
       </div>
     </nav>
 
+      <body>
     <section class="home-pages">
       <div class="title">
         <h1>WELCOME</h1><br>
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">About Us</button>
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Why Us</button>
+        </div>
       </div>
+
     </section>
     
-    <body>
-      <section class="content-about">
-        <br><br>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      </section>
-
-
-    <section class="mobile">
-      <p>Please call or view on a larger screen size for more information on deliveries, pricing, and billing.</p>
-    </section>
-
-    <div class="space"><br><br></div>
+           
 
     <footer class="footer">
-      <div class="row hide">
+      <div class="row HM">
         <div class="col">
           <div class="call ">
             <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a>
@@ -97,14 +101,14 @@
       </div>
 
       <div class="row">
-        <div class="col padding-0 hide">
+        <div class="col padding-0 HM">
           <a href="../index.html" class="footer"><img src="../images/PNXIFooter.png" alt="Footer Logo" height="150"
               width="300" class="footer"></a>
         </div>
 
         <div class="col padding-0">
           <a href="delivery.html"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
-          <ul class="footer hide">
+          <ul class="footer HM">
             <li><a href="about.html">About Us</a></li>
             <li><a href="information.html#order">Order Methods</a></li>
             <li><a href="information.html#payment">Payment Methods</a></li>
@@ -113,7 +117,7 @@
 
         <div class="col padding-0">
           <a href="catalog.html"><button type="button" class="btn btn-lg btn-block">Catalog</button></a>
-          <ul class="footer hide">
+          <ul class="footer HM">
             <li><a href="information.html#canc-ret">Cancellations/Returns</a></li>
             <li><a href="information.html#refusal">Refusal of Shipment</a></li>
             <li><a href="information.html#setup">Setup/Usage</a></li>
@@ -122,7 +126,7 @@
 
         <div class="col padding-0">
           <a href="contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
-          <ul class="footer hide">
+          <ul class="footer HM">
             <li><a href="information.html#warranties">Warranties</a></li>
             <li><a href="information.html#terms-con">Terms & Conditions</a></li>
             <li><a href="../index.html"></a>©2020 PNXI</a></li>
@@ -135,14 +139,19 @@
       </div>
     </footer>
   </div>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
 </body>
-
-
-
-
-
-<!-- Jquery needed -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../script.js"></script>
 
 </html>

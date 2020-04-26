@@ -204,7 +204,9 @@ div.showWindow {
   overflow: hidden;
 }
 
-
+.modal-title {
+  text-align: center;
+}
 
 
 
@@ -220,7 +222,7 @@ div.showWindow {
 /* media queries */
 @media screen and (max-width:750px) {
 
-  .hidden {
+  .HM {
     font: #000000;
     display: none;
   }
