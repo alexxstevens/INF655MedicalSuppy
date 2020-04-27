@@ -2,139 +2,190 @@
 <html lang="en-US">
 
 <!-- head -->
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width" name="viewport">
   <title>Pacific Northwest X-Ray, Inc.</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../navstyle.css">
   <link rel="stylesheet" type="text/css" href="../style.css">
-
 </head>
+
 
 <!-- body -->
 
 <body>
 
-  <div class="container">
-  
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-  
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-  
+  <div id="wrapper"></div>
+  <!-- nav -->
+  <nav class="nav affix">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="../images/PNXILogo.png" id="logo" alt="PNXI Logo" height="130"
+            width="130"></a>
       </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="about.html">About</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="supplies.html">Supplies</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="parts.html">Parts</a></li>
+          <li><a href="information.html#order" class="special">Order Now</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
     </div>
-  
-  </div>
+  </nav>
 
-  <div id="wrapper">
-    <!-- nav -->
-    <nav class="nav affix">
-      <div class="container">
-        <div class="logo">
-          <a href="../index.html"><img src="../images/PNXILogo.png" id="logo" alt="PNXI Logo" height="130"
-              width="130"></a>
+  <body>
+
+    <div class="sidenav">
+      <p>ACCESSORIES</p>
+      <a href="#about">Cabinetry/Storage</a>
+      <a href="#services">Cassettes/CR</a>
+      <a href="#clients">Exam Room Product</a>
+      <a href="#contact">Film/Cassette Cases</a>
+      <a href="#about">Caddies/Racks/Foam</a>
+      <a href="#clients">X-Ray Markers</a>
+    </div>
+
+    <section id="inventory-content">
+      <br><br><br><br>
+      <h1>ACCESSORIES</h1>
+
+      <table>
+        <tr>
+          <td>
+            <div class="item responsive">
+              <a href="*">
+                <img src="../images/Accessories.png" alt="Cabinetry/Storage" class="responsive"><BR>
+                <h5>Cabinetry/Storage</h5>
+              </a>
+            </div>
+          </td>
+          <td class="space"></td>
+          <td>
+            <div class="item responsive"">
+                <a href=" *">
+              <img src="../images/Accessories.png" alt="Cassettes/CR" class="responsive"><BR>
+              <h5>Cassettes/CR</h5>
+              </a>
+            </div>
+          </td>
+          <td class="space"></td>
+          <td>
+            <div class="item responsive">
+              <a href="*">
+                <img src="../images/Accessories.png" alt="Exam Room Product" class="responsive"><BR>
+                <h5>Exam Room Product</h5>
+              </a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+        <td>
+          <div class="item responsive">
+            <a href="*">
+              <img src="../images/Accessories.png" alt="Film/Cassette Cases" class="responsive"><BR>
+              <h5>Film/Cassette Cases</h5>
+            </a>
+          </div>
+        </td>
+        <td class="space"></td>
+          <td>
+            <div class="item responsive">
+              <a href="*">
+                <img src="../images/Accessories.png" alt="Caddies/Racks/Foam" class="responsive"><BR>
+                <h5>Caddies/Racks/Foam</h5>
+              </a>
+            </div>
+          </td>
+          <td class="space"></td>
+          <td>
+            <div class="item responsive">
+              <a href="*">
+                <img src="../images/Accessories.png" alt="X-Ray Markers" class="responsive"><BR>
+                <h5>X-Ray Markers</h5>
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col">
+          <div class="call">
+            <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a>
+            </h4>
+          </div>
         </div>
-        <div id="mainListDiv" class="main_list">
-          <ul class="navlinks">
-            <li><a href="about.html">About</a></li>
-            <li><a href="equipment.html">Equipment</a></li>
-            <li><a href="supplies.html">Supplies</a></li>
-            <li><a href="accessories.html">Accessories</a></li>
-            <li><a href="parts.html">Parts</a></li>
-            <li><a href="order.html" class="special">Order Now</a></li>
+      </div>
+
+      <div class="row">
+        <div class="col padding-0 HM">
+          <a href="../index.html" class="footer"><img src="../images/PNXIFooter.png" alt="Footer Logo" height="150"
+              width="300" class="footer"></a>
+        </div>
+
+        <div class="col padding-0">
+          <a href="information.html#order"><button type="button" class="btn btn-lg btn-block">Order Now</button></a>
+          <ul class="footer HM">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="information.html#order">Order Methods</a></li>
+            <li><a href="information.html#payment">Payment Methods</a></li>
           </ul>
         </div>
-        <span class="navTrigger">
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
+
+        <div class="col padding-0">
+          <a href="information.html"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
+          <ul class="footer HM">
+            <li><a href="information.html#canc-ret">Cancellations/Returns</a></li>
+            <li><a href="information.html#refusal">Refusal of Shipment</a></li>
+            <li><a href="information.html#setup">Setup/Usage</a></li>
+          </ul>
+        </div>
+
+        <div class="col padding-0">
+          <a href="contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
+          <ul class="footer HM">
+            <li><a href="information.html#warranties">Warranties</a></li>
+            <li><a href="../index.html"></a>©2020 PNXI</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
 
-<div class="container">
-    <br><br><br>
-    <h2>Modal Example</h2>
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-  </div>
-
-      <footer class="footer">
-        <div class="row HM">
-          <div class="col">
-            <div class="call ">
-              <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col padding-0 HM">
-            <a href="../index.html" class="footer"><img src="../images/PNXIFooter.png" alt="Footer Logo" height="150"
-                width="300" class="footer"></a>
-          </div>
-
-          <div class="col padding-0">
-            <a href="delivery.html"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
-            <ul class="footer HM">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="information.html#order">Order Methods</a></li>
-              <li><a href="information.html#payment">Payment Methods</a></li>
-            </ul>
-          </div>
-
-          <div class="col padding-0">
-            <a href="catalog.html"><button type="button" class="btn btn-lg btn-block">Catalog</button></a>
-            <ul class="footer HM">
-              <li><a href="information.html#canc-ret">Cancellations/Returns</a></li>
-              <li><a href="information.html#refusal">Refusal of Shipment</a></li>
-              <li><a href="information.html#setup">Setup/Usage</a></li>
-            </ul>
-          </div>
-
-          <div class="col padding-0">
-            <a href="contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
-            <ul class="footer HM">
-              <li><a href="information.html#warranties">Warranties</a></li>
-              <li><a href="information.html#terms-con">Terms & Conditions</a></li>
-              <li><a href="../index.html"></a>©2020 PNXI</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="center">
-          <p class="mobile">©2020 Pacific Northwest X-Ray, Inc.</p>
-        </div>
-      </footer>
-  </div>
-</body>
+      <div class="center">
+        <p class="mobile">©2020 Pacific Northwest X-Ray, Inc.</p>
+      </div>
+    </footer>
+    </div>
 
 
 
 
-
-<!-- Jquery needed -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+  </body>
 
 </html>

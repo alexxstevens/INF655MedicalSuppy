@@ -6,6 +6,7 @@ div.wrapper {
     margin-right: auto; 
 }
 
+
 /* footer styling */
 footer {
   background-color: RGB(54,174,216);
@@ -49,7 +50,6 @@ img.footer {
 padding-left: 20px;
 padding-right: 0px;
 }
-
 
 footer div.call {
   padding-top: 5px;
@@ -115,41 +115,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* pages styling */
 .home-pages {
     height: 50vh;
@@ -192,7 +157,16 @@ div.title button:hover {
 }
 
 
+
+
+
+
 /* about section */
+h4.modal-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #about-content {
   text-align: center;
 }
@@ -217,38 +191,24 @@ div.icons {
 display:inline-block;
 }
 
-div#accordion {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: .6em;
-  width: 40vw;
-} 
-
 p.learnMore {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.2em;
-}
-
-div.panel-body {
-  font-size: 1.6em;
-}
-
-div.panel-default {
-  text-align: left;
+  font-size: 1em;
 }
 
 #about-content a.nostyle {
   color: #36aed8;
 }
 
-div.panel-heading {
-  background-color: aliceblue;
-  border: 1px solid lightgrey;
-  padding: 10px;
-  padding-top: 15px;
+
+
+span.bold {
+  font-weight: bold;
 }
+
+
 
 /* blockquote styling */
 blockquote {
@@ -275,19 +235,183 @@ blockquote p {
 
 
 
+/* inventory styling */
+.sidenav {
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 15%;
+  left: 10px;
+  background: aliceblue;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 2px 8px 20px 16px;
+  color: black;
+  display: block;
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+.sidenav a:hover {
+  color: #36add8;
+}
+
+.sidenav p {
+  font-weight: bold;
+}
+
+#inventory-content {
+  margin-left: 20%; 
+  margin-right: 5%;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+#inventory-content h1 {
+  font-size: 3.5em;
+  text-shadow: 2px 2px #5eafcc;
+  text-align: center;
+}
 
 
 
+/* information styling */
+
+#information-content h1 {
+  font-size: 3.5em;
+  text-shadow: 2px 2px #5eafcc;
+  text-align: center;
+}
+
+#information-content a.nostyle {
+  color: #36aed8;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.special {
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+.head {
+  font-size: 1.2em;
+}
+
+div.mail {
+  font-style: italic;
+  background-color: aliceblue;
+  font-size: .8em;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  width: 50vw;
+  box-shadow: 1px 1px 1px #36aed8;;
+
+}
+
+/* supplies styling */
+#inventory-content-supplies h1 {
+  font-size: 3.5em;
+  text-shadow: 2px 2px #5eafcc;
+  text-align: center;
+}
 
 
 
+/* accordion styling */
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-header {
+  text-align: left;
+}
+
+.card {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-content .card {
+  width: 90vw;
+}
 
 
+/* contact styling */
 
+#contact {
+  box-sizing: border-box;
 
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #36add8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #36add8;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact h1 {
+  font-size: 3.5em;
+  text-shadow: 2px 2px #5eafcc;
+  text-align: center;
+}
 
 
 /* media queries */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+}}
+
 @media screen and (max-width:750px) {
 
   .HM {
@@ -332,11 +456,16 @@ div#accordion {
   width: 90vw;
 } 
 
+blockquote {
+  width: 80vw;
+}
+
 p.learnMore {
   font-size: 1em;
+  width: 90vw;
 }
 
 div.panel-body {
-  font-size: 2em;
+  font-size: 2.1em;
 }
 }
