@@ -64,18 +64,13 @@ footer div.call {
 
 
 /* content styling */
-.content-cubes {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .item {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 300px;
   text-align: center;
-  margin: 20px;
 }
 
 .item a {
@@ -86,19 +81,10 @@ footer div.call {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.item img {
+/* .item img {
   max-width: 290px;
-}
+} */
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-
-td.space {
-  width: 20px;
-}
 
 .end {
   text-align: center;
@@ -108,10 +94,11 @@ td.space {
   display: none;
 }
 
-table {
-  margin-right: 20px;
-  margin-left: 20px;
+section.content {
+  margin-right: 200px;
+  margin-left: 200px;
 }
+
 
 
 
@@ -240,7 +227,7 @@ blockquote p {
   width: 15%;
   position: fixed;
   z-index: 1;
-  top: 15%;
+  top: 20%;
   left: 10px;
   background: aliceblue;
   overflow-x: hidden;
@@ -403,16 +390,86 @@ input[type=submit]:hover {
 }
 
 
-/* media queries */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+/* 
+flex style */
+.content-cubes {   
+    display: grid;  
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.content-cubes > div > img {
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+  .content-cubes {     
+    grid-template-columns: 1fr 1fr; 
   }
-  .sidenav a {
-    font-size: 18px;
-}}
+}
+
+@media screen and (max-width:1030px) {
+
+  .sidenav {
+    display: none;}
+
+
+
+  #inventory-content {
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+  }
+
+  #inventory-content h1 {
+  font-size: 2em;
+  }
+
+    section.content {
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  section.content {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+
 
 @media screen and (max-width:750px) {
+  .content-cubes {     
+    grid-template-columns: 1fr; 
+  }
+
+
+
+
+  .sidenav {
+    display: none;}
+
+
+  #inventory-content {
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+  }
+
+  #inventory-content h1 {
+  font-size: 1.5em;
+  }
 
   .HM {
     font: #000000;
@@ -420,7 +477,9 @@ input[type=submit]:hover {
   }
 
   section.content {
-    display: none;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   section.mobile {
@@ -449,12 +508,6 @@ input[type=submit]:hover {
     background-color: black;
   }
 
-div#accordion {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: .4em;
-  width: 90vw;
-} 
 
 blockquote {
   width: 80vw;
@@ -465,7 +518,5 @@ p.learnMore {
   width: 90vw;
 }
 
-div.panel-body {
-  font-size: 2.1em;
-}
+
 }
