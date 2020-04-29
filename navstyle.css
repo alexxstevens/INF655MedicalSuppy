@@ -12,6 +12,7 @@
 div.logo {
     position: absolute;
     left: 10px;
+    display: inline;
 }
 
 .nav div.main_list {

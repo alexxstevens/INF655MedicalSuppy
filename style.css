@@ -12,7 +12,7 @@ div.wrapper {
     position: fixed;
     bottom: 0px;
     right: 0px; 
-    height: 49px;
+    height: 48px;
     width: 100px;
     background-color: black;
     font-weight: bold;
@@ -505,10 +505,9 @@ div.white {
   background-color: aliceblue;
 }
 
-div.inline > img, div.inline > h3{
-  display: inline;
+section#title2 {
+  display: none;
 }
-
 
 div.inline h3 {
   position: relative;
@@ -516,13 +515,8 @@ div.inline h3 {
   padding-left: 10px;
 }
 
-div.inline >img {
-  position: relative;
-  padding-left: 20px;
-}
-
-.mountain {
-  padding: 0;
+div.white img.logo {
+  padding-left: 10px;
 }
 
 div.white {
@@ -541,29 +535,67 @@ div.white {
 
 div.cart {
   background-color: aliceblue;
-  font-size: .8em;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 5px;
   padding-bottom: 1px;
   box-shadow: 1px 1px 1px #36aed8;
   width: 90%;
+}
 
+div#money {
+  margin-left: 50px
+}
+
+
+div.product-cubes div.white button {
+  margin-right: 15px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width:1000px) {
   .content-cubes {     
     grid-template-columns: 1fr 1fr; 
   }
+
+  div.white img.logo {
+  display: none;
+}
+
   .product-cubes {     
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr; 
   }
+
+div.product-cubes div.white button {
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+
 }
 
 @media screen and (max-width:1030px) {
 
   .sidenav {
     display: none;}
+
+  .product-cubes {     
+    grid-template-columns: 1fr 1fr; 
+  }
+
+    div.product-cubes div.white img {
+  width: 30vw;
+}
+
+div.white img.logo {
+  display: none;
+}
+
+
+div.product-cubes div.white button {
+  margin-right: 15px;
+  margin-left: 20px;
+}
 
 
 
@@ -585,15 +617,112 @@ div.cart {
 }
 
 @media screen and (max-width:800px) {
+section#title2 {
+  display: inline-block;
+}
+
+section#title {
+  display: none;
+}
+
   section.content {
     text-align: center;
     margin-right: 100px;
     margin-left: 100px;
   }
+
+  .product-cubes {     
+    grid-template-columns: 1fr; 
+  }
+
+
+
+div.product-cubes div.white button {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+    div.product-cubes div.white img {
+  width: 80vw;
+}
+
+div.white div.inline img.HM {
+  display: none;
+}
+
 }
 
 
 @media screen and (max-width:750px) {
+  section#title2 {
+  display: inline-block;
+}
+
+section#title {
+  display: none;
+}
+
+  #fixedbutton {
+      bottom: -50px;
+  }
+
+  div.mail {
+  width: 80vw;
+}
+
+#information-content h1 {
+  font-size: 2em;
+}
+
+div.white {
+  width: 90vw;
+}
+
+div.product-cubes div.white img {
+  width: 80vw;
+}
+
+div.white div.inline img.HM {
+  display: none;
+}
+
+
+div.inline h3 {
+  position: relative;
+  top: 20px;
+  padding-left: 0px;
+}
+
+div.inline >img {
+  padding-left: 5px;
+}
+
+
+div.white {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.product_info p {
+  margin-left: 10px;
+}
+
+
+
+
+div#money {
+  margin-left: 3px
+}
+
+
+div.product-cubes div.white button {
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+
   .content-cubes {     
     grid-template-columns: 1fr; 
   }
@@ -614,12 +743,18 @@ div.cart {
   }
 
   #inventory-content h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   }
+
+  div.title h1 {
+  font-size: 3em;
+}
+
 
   .HM {
     display: none;
   }
+
 
   section.content {
     text-align: center;

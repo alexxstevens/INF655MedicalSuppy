@@ -34,6 +34,7 @@ $(".panel-group").on("shown.bs.collapse", toggleIcon);
               document.getElementById("fixedbutton").style.display = "block";
             };
 
+
 //shopping cart storage
 window.load = doShowAll();
 //check browser support
@@ -59,7 +60,7 @@ function doShowAll() {
     }
     //If no item exists in the cart.
     if (list == "<tr><th>Item</th><th>Value</th></tr>\n") {
-      list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
+      list += "<tr><td><i>EMPTY</i></td>\n<td><i></i></td></tr>\n";
     }
     //Bind the data to HTML table.
     //You can use jQuery, too.
@@ -75,16 +76,15 @@ localStorage.removeItem('propertyName');
 
 function SaveItem() {
   $('button').click(function () {
-    try {
+    setTimeout(data, 500);
     var data = $.parseJSON($(this).attr('data-button'));
     console.log(data.name, data.data)
     localStorage.setItem(data.name,data.data);
     doShowAll();
-  }
-    catch (err) {
-      console.log('Try again')
-      doShowAll();}
   });}
+
+
+
 
 function ClearAll() {
   localStorage.clear();
