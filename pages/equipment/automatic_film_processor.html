@@ -43,6 +43,21 @@
     </div>
   </nav>
 
+  <!-- shopping cart -->
+  <button id="fixedbutton" class="open-button" onclick="openForm()"
+    title="Click here to view your virtual shopping list"><img src="../../images/shop.png"></button>
+
+    <div class="shop-popup" id="myForm">
+      <form action="*" class="form-container">
+        <div id="items_table">
+          <h2>Shopping List</h2>
+          <table id="list"></table>
+          <input type="button" value="Clear Cart" onclick="ClearAll()">
+        </div><br>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
 <!-- Modal 1-->
 <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
   aria-hidden="true">
@@ -112,13 +127,14 @@
 
 
     <section class="product_info">
-    <br><br><br><br>
-    <p><a href="../../index.html">Home </a>><a href="../equipment.html"> Equipment </a>> Automatic Film Processor</p>
+    <br><br><br><br><br>
+    <p>   <a href="../../index.html">  Home  </a> > <a href="../equipment.html">  Equipment  </a>  >  Automatic Film Processor</p>
     <br>
       <div class="product-cubes">
         <div class="white">
           <img src="../../images/automatic_film_processor.jpg" alt="automatic_film_processor">
-          <h5>Standard Equipment:</h5><br>
+          <hr>
+          <h5>Standard Equipment:</h5>
           <ul>
             <li>Comes complete and ready with all components for tabletop processing</li>
             <li>Levelling legs for uneven surfaces</li>
@@ -133,62 +149,38 @@
           <br><br>
         </div>
 
-        <div class="white">
+        <div class="white" data-name="OPTIMAX" data-price="5,995.00">
           <div class="inline">
             <img class="HM" src="../../images/proteclogo.jpg" alt="Protec" height="75" width="100">
             <h3>OPTIMAX Table Top Film Processor</h3>
-          </div>
+          </div><br>
           <h5>Rugged & Reliable Table-Top Automatic X-Ray Film Processor</h5>
-          <p>The OPTIMAX is the world's premier 90 second automatic x-ray film processor. Designed as a rugged workhorse, the OPTIMAX can handle film volumes from very low to a higher capacity. The proven design of the OPTIMAX is efficient with energy, water & chemical use, saving the OPTIMAX owner money while delivering outstanding quality images. The OPTIMAX is manufactured by Protec Medical in Germany in compliance with DIN ISO 9001:2000, IEC, TUV, CE, CSA, and UL quality standards. The OPTIMAX sets the standard of excellence for 90 second automatic x-ray film processors.</p><br>
+          <p>The OPTIMAX is the world's premier 90 second automatic x-ray film processor. Designed as a rugged workhorse, the OPTIMAX can handle film volumes from very low to a higher capacity. The proven design of the OPTIMAX is efficient with energy, water & chemical use, saving the OPTIMAX owner money while delivering outstanding quality images. The OPTIMAX is manufactured by Protec Medical in Germany in compliance with DIN ISO 9001:2000, IEC, TUV, CE, CSA, and UL quality standards. The OPTIMAX sets the standard of excellence for 90 second automatic x-ray film processors.</p>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1" title="Click Here for Product Features" alt="product_features">
             Features & Benefits
           </button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" title="Click Here for Product Specs" alt="product_specs">
             Product Specs
-          </button><br><br>
-          <h5>Price: $5,995.00</h5>
+          </button><br><hr><br>
+          <h5>Price: $5,995.00</h5><br>
+
+          <button type="button" data-button='{"name": "OPTIMAX", "data": 
+          "$5,995"}'' onclick="SaveItem()">Add to Virtual Cart</button><br><br><hr><br>
+
+          <div class="cart">
+            <h5>Add Product to our Virtual Shopping Cart</h5>
+            <p>Keep track of orders easily while you shop to easily transfer your order to our secure order form.  Please see <a href="../information.html#order">Order Methods</a> for more information on how to place your order.</p>
+
+
+          </div>
         </div>
+
+         
+
       </div>
       <br><br>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -256,7 +248,39 @@
   integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="../script.js"></script>
+<script src="../../script.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

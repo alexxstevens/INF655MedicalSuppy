@@ -6,6 +6,7 @@
     line-height: 80px;
     z-index: 1;
     font-size: 1.2em;
+    z-index: 4000;
 }
 
 div.logo {
@@ -74,6 +75,7 @@ section.home div.call {
     bottom: 0px; 
     width: 100%;
     padding: 0px;
+    z-index: 2000;
 
 }
 

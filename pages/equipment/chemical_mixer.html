@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- head -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width" name="viewport">
+  <title>Pacific Northwest X-Ray, Inc.</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../navstyle.css">
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
+
+
+<!-- body -->
+
+<body class="product-blue">
+
+  <div id="wrapper"></div>
+  <!-- nav -->
+  <nav class="nav affix">
+    <div class="container">
+      <div class="logo">
+        <a href="../../index.html"><img src="../../images/PNXILogo.png" id="logo" alt="PNXI Logo" height="130"
+            width="130"></a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../equipment.html">Equipment</a></li>
+          <li><a href="../supplies.html">Supplies</a></li>
+          <li><a href="../accessories.html">Accessories</a></li>
+          <li><a href="../parts.html">Parts</a></li>
+          <li><a href="../information.html#order" class="special">Order Now</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- shopping cart -->
+  <button id="fixedbutton" class="open-button" onclick="openForm()"
+    title="Click here to view your virtual shopping list"><img src="../../images/shop.png"></button>
+
+  <div class="shop-popup" id="myForm">
+    <form action="*" class="form-container">
+      <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <input type="button" value="Clear Cart" onclick="ClearAll()">
+          
+      </div><br>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <!-- Modal 1-->
+  <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Features</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                  <ul>
+                    <li>Specific Gravity Mixing System - The ultimate in convenience and accuracy</li>
+                    <li>Rugged field tested components assure reliability</li>
+                    <li>24 Volt Operation - Uses no circuit boards</li>
+                    <li>Audible and visible low level warning system</li>
+                    <li>Easy-to-service design</li>
+                    <li>UL/CSA approved external power supply</li>
+                  </ul>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2-->
+  <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Product Specs:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>120 Volts AC</li>
+            <li>Dimensions: Standard Model - 30"H x 24"W x12"D. Space Saver - 21"H x 24"W x 12"D</li>
+            <li>Capacity: Standard Model - 12.5 gallons, Developer & Fixer. Space Saver - 7.5 gallons, Developer & Fixer</li>
+            <li>Operation Range: 18-125 psi Water Pressure</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="product_info">
+    <br><br><br><br><br>
+    <p> <a href="../../index.html"> Home </a> > <a href="../equipment.html"> Equipment </a> > Automatic Film Processor
+    </p>
+    <br>
+    <div class="product-cubes">
+      <div class="white">
+        <img src="../../images/chemical_mixers.jpg" alt="automatic_film_processor">
+        <hr>
+        <p>A versatile Chemical Mixer for use with:</p>
+          <ul>
+            <li>X-Ray</li>
+            <li>Graphic Arts</li>
+            <li>Photo Products</li>
+            <li>One year warranty on all parts</li>
+          </ul>
+        <br><br>
+      </div>
+
+      <div class="white" data-name="OPTIMAX" data-price="5,995.00">
+        <div class="inline">
+          <img class="mountain" src="../../images/whitemountainlogo.png" alt="Protec" height="80" width="120">
+          <h3>IS-199 Chemical Mixers</h3>
+        </div><br>
+        <h5>Space Saver 7.5 Gallon</h5>
+
+        <p>The IS-199 incorporates a unique combination of features which make it the Mixer of Choice for both the user and the
+        serviceman. The Specific Gravity Mixing System allows the user to start a mix anytime. The mixer responds to the
+        addition of concentrated chemicals and adds the correct amount of water automatically. All Electronic Components have
+        been chosen for dependability. Straight-forward circuit designs eliminate the need for circuit boards thereby increasing
+        reliability. The Low Level Warning System indicates that solution level is 2.0 gallons or less. The warning system
+        resets automatically when the user begins a 5 or 10 gallon mix.</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1"
+          title="Click Here for Product Features" alt="product_features">
+          Features
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2"
+          title="Click Here for Product Specs" alt="product_specs">
+          Product Specs
+        </button><br>
+        <hr><br>
+        <h5>Price: $5,995.00</h5><br>
+
+        <button type="button" data-button='{"name": "Chemical Mixer", "data": 
+          "$300"}'' onclick="SaveItem()">Add to Virtual Cart</button><br><br><hr><br>
+
+          <div class="cart">
+            <h5>Add Product to our Virtual Shopping Cart</h5>
+            <p>Keep track of orders easily while you shop to easily transfer your order to our secure order form.  Please see <a href="../information.html#order">Order Methods</a> for more information on how to place your order.</p>
+
+
+          </div>
+        </div>
+
+         
+
+      </div>
+      <br><br>
+
+    </section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="row">
+    <div class="col">
+      <div class="call">
+        <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col padding-0 HM">
+      <a href="../../index.html" class="footer"><img src="../../images/PNXIFooter.png" alt="Footer Logo" height="150"
+          width="300" class="footer"></a>
+    </div>
+
+    <div class="col padding-0">
+      <a href="../information.html#order"><button type="button" class="btn btn-lg btn-block">Order</button></a>
+      <ul class="footer HM">
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../information.html#order">Order Methods</a></li>
+        <li><a href="../information.html#setup">Payment Methods</a></li>
+      </ul>
+    </div>
+
+    <div class="col padding-0">
+      <a href="../information.html#delivery"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
+      <ul class="footer HM">
+        <li><a href="../information.html#canc-ret">Cancellations/Returns</a></li>
+        <li><a href="../information.html#refusal">Refusal of Shipment</a></li>
+        <li><a href="../information.html#setup">Setup/Usage</a></li>
+      </ul>
+    </div>
+
+    <div class="col padding-0">
+      <a href="../contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
+      <ul class="footer HM">
+        <li><a href="../information.html#warranties">Warranties</a></li>
+        <li><a href="../../index.html"></a>©2020 PNXI</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="center">
+    <p class="mobile">©2020 Pacific Northwest X-Ray, Inc.</p>
+  </div>
+</footer>
+</div>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../../script.js"></script>
+</body>
+
+</html>

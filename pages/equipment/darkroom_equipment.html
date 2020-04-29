@@ -43,7 +43,20 @@
     </div>
   </nav>
 
-  <body>
+  <!-- shopping cart -->
+<button id="fixedbutton" class="open-button" onclick="openForm()"
+  title="Click here to view your virtual shopping list"><img src="../../images/shop.png"></button>
+
+  <div class="shop-popup" id="myForm">
+    <form action="*" class="form-container">
+      <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <input type="button" value="Clear Cart" onclick="ClearAll()">
+      </div><br>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 
     <div class="sidenav">
       <p>EQUIPMENT</p>
@@ -71,7 +84,7 @@
 
         <div class="item">
           <img src="../../images/chemical_mixers.jpg" alt="Chemical Mixers"><BR>
-          <a href="../TBD.html">
+          <a href="chemical_mixer.html">
             <h5>Chemical Mixers</h5>
           </a>
         </div>
@@ -157,7 +170,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
+    <script src="../../script.js"></script>
   </body>
 
 </html>

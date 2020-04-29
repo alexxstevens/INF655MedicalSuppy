@@ -41,6 +41,21 @@
     </div>
   </nav>
 
+  <!-- shopping cart -->
+<button id="fixedbutton" class="open-button" onclick="openForm()"
+  title="Click here to view your virtual shopping list"><img src="../../images/shop.png"></button>
+  
+  <div class="shop-popup" id="myForm">
+    <form action="*" class="form-container">
+      <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <input type="button" value="Clear Cart" onclick="ClearAll()">
+      </div><br>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
   <div id="information-content">
   <br><br><br>
         <div class="container"><br>
@@ -57,6 +72,7 @@
               <div id="order" class="card-body collapse" data-parent="#accordion">
                 <p class="bold head">To ensure security and great service, you may place your order by phone, fax, or e-mail:
                 </p>
+                <p class="italic">Note: You may use our virtual shopping cart to keep track of your order while you peruse our inventory. The shopping cart can be located in the bottom left corner of your page.  Note the cart will only save your list while your page is open.</p>
                 <p class="bold">By Phone:</p>
                   <ul>
                     <li>Call <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a> to place your order</li>
@@ -285,6 +301,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"></script>
     <script src="../script.js"></script>
+
   </body>
 
 </html> 
