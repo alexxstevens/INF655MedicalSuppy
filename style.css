@@ -421,7 +421,12 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; 
+  width: 20vw;
+}
+
+div.center {
+  text-align: center;
 }
 
 input[type=submit]:hover {
@@ -487,7 +492,7 @@ p.TBD {
   margin-left: 50px;
   margin-right: 50px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   padding-top: 50px;
   padding-bottom: 50px;
 }

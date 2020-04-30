@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- head -->
-
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width" name="viewport">
-<meta name="description"content="This is a Medical & Industrial X-Ray / Radiology equipment, accessories, supplies & parts for imaging catalog site. This is medical supply retailer and provide web hosting and colocation services."><title>Pacific Northwest X-Ray - Medical Equipment/Supplies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="rating" content="General">
+  <meta name="expires" content="never">
+  <meta name="language" content="English, EN">
+  <title>Pacific Northwest X-Ray - Medical Equipment/Supplies</title>
+  <meta name="description"
+    content="This is a Medical & Industrial X-Ray / Radiology equipment, accessories, supplies & parts for imaging catalog site. This is medical supply retailer and provide web hosting and colocation services.">
+  <meta name="keywords" content="PNXI, Pacific, Northwest, X-Ray, Radiology, Medical, Supply">
+  <meta name="author" content="Alex Stevens">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../navstyle.css">
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-
-<!-- body -->
-
 <body>
-
-  <div id="wrapper"></div>
-  <!-- nav -->
-  <nav class="nav affix">
-    <div class="container">
-      <div class="logo">
-        <a href="../index.html"><img src="../images/PNXILogo.png" id="logo" alt="PNXI Logo" height="130"
-            width="130"></a>
+  <div id="wrapper">
+    <!-- nav -->
+    <nav class="nav affix">
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html"><img src="../images/PNXILogo.png" id="logo" alt="PNXI Logo" height="130"
+              width="130"></a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="about.html">About</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="supplies.html">Supplies</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="parts.html">Parts</a></li>
+            <li><a href="information.html#order" class="special">Order Now</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
       </div>
-      <div id="mainListDiv" class="main_list">
-        <ul class="navlinks">
-          <li><a href="about.html">About</a></li>
-          <li><a href="equipment.html">Equipment</a></li>
-          <li><a href="supplies.html">Supplies</a></li>
-          <li><a href="accessories.html">Accessories</a></li>
-          <li><a href="parts.html">Parts</a></li>
-          <li><a href="information.html#order" class="special">Order Now</a></li>
-        </ul>
-      </div>
-      <span class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
+    </nav>
+    <!-- shopping cart -->
+    <button id="fixedbutton" class="open-button" onclick="openForm()"
+      title="Click here to view your virtual shopping list"><img src="../images/shop.png"></button>
+    <div class="shop-popup" id="myForm">
+      <form action="*" class="form-container">
+        <div id="items_table">
+          <h2>Shopping List</h2>
+          <table id="list"></table>
+          <input type="button" value="Clear Cart" onclick="ClearAll()">
+        </div><br>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
     </div>
-  </nav>
-
-<!-- shopping cart -->
-<button id="fixedbutton" class="open-button" onclick="openForm()"
-  title="Click here to view your virtual shopping list"><img src="../images/shop.png"></button>
-
-<div class="shop-popup" id="myForm">
-  <form action="*" class="form-container">
-    <div id="items_table">
-      <h2>Shopping List</h2>
-      <table id="list"></table>
-      <input type="button" value="Clear Cart" onclick="ClearAll()">
-    </div><br>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
+    <!-- inventory side nav -->
     <div class="sidenav">
       <p>ACCESSORIES</p>
       <a href="TBD.html">Cabinetry/Storage</a>
@@ -67,66 +66,53 @@
       <a href="TBD.html">Caddies/Racks/Foam</a>
       <a href="TBD.html">X-Ray Markers</a>
     </div>
-
+    <!-- content -->
     <section id="inventory-content">
       <br><br><br><br>
       <h1>ACCESSORIES</h1>
-
       <div class="content-cubes">
             <div class="item">
               <img src="../images/Accessories.png" alt="Cabinetry/Storage" ><BR>
               <a href="TBD.html"><h5>Cabinetry/Storage</h5></a>
             </div>
-
-
             <div class="item">         
               <img src="../images/Accessories.png" alt="Cassettes/CR" class="responsive"><BR>
               <a href="TBD.html"><h5>Cassettes/CR</h5></a>
             </div>
-
             <div class="item">
                 <img src="../images/Accessories.png" alt="Exam Room Product" class="responsive"><BR>
                 <a href="TBD.html"><h5>Exam Room Product</h5></a>
             </div>
-
-          <div class="item">
-              <img src="../images/Accessories.png" alt="Film/Cassette Cases" class="responsive"><BR>
-              <a href="TBD.html"><h5>Film/Cassette Cases</h5></a>
-          </div>
-
+            <div class="item">
+                <img src="../images/Accessories.png" alt="Film/Cassette Cases" class="responsive"><BR>
+                <a href="TBD.html"><h5>Film/Cassette Cases</h5></a>
+            </div>
             <div class="item">            
                 <img src="../images/Accessories.png" alt="Caddies/Racks/Foam" class="responsive"><BR>
                 <a href="TBD.html"><h5>Caddies/Racks/Foam</h5></a>
             </div>
-
             <div class="item">
-              
                 <img src="../images/Accessories.png" alt="X-Ray Markers" class="responsive"><BR>
                 <a href="TBD.html"><h5>X-Ray Markers</h5></a>
             </div>
       </div>
-      </section>
-
-<br><br> 
-
-
+    </section>
+    <br><br> 
 
     <footer class="footer">
       <div class="row">
         <div class="col">
           <div class="call">
-            <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a>
+            <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle" rel="nofollow">1-800-827-9729</a>
             </h4>
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="col padding-0 HM">
           <a href="../index.html" class="footer"><img src="../images/PNXIFooter.png" alt="Footer Logo" height="150"
               width="300" class="footer"></a>
         </div>
-
         <div class="col padding-0">
           <a href="information.html#order"><button type="button" class="btn btn-lg btn-block">Order</button></a>
           <ul class="footer HM">
@@ -135,7 +121,6 @@
             <li><a href="information.html#setup">Payment Methods</a></li>
           </ul>
         </div>
-
         <div class="col padding-0">
           <a href="information.html#delivery"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
           <ul class="footer HM">
@@ -144,7 +129,6 @@
             <li><a href="information.html#setup">Setup/Usage</a></li>
           </ul>
         </div>
-
         <div class="col padding-0">
           <a href="contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
           <ul class="footer HM">
@@ -153,18 +137,16 @@
           </ul>
         </div>
       </div>
-
       <div class="center">
         <p class="mobile">©2020 Pacific Northwest X-Ray, Inc.</p>
       </div>
     </footer>
-    </div>
+
+  <!-- site wrapper -->
+  </div>
 
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- required -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -174,8 +156,5 @@
       crossorigin="anonymous"></script>
     <script src="../script.js"></script>
 
-
- 
   </body>
-
-</html>
+  </html>

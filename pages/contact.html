@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- head -->
-
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width" name="viewport">
-<meta name="description"content="This is a Medical & Industrial X-Ray / Radiology equipment, accessories, supplies & parts for imaging catalog site. This is medical supply retailer and provide web hosting and colocation services."><title>Pacific Northwest X-Ray - Medical Equipment/Supplies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="rating" content="General">
+  <meta name="expires" content="never">
+  <meta name="language" content="English, EN">
+  <title>Pacific Northwest X-Ray - Medical Equipment/Supplies</title>
+  <meta name="description"
+    content="This is a Medical & Industrial X-Ray / Radiology equipment, accessories, supplies & parts for imaging catalog site. This is medical supply retailer and provide web hosting and colocation services.">
+  <meta name="keywords" content="PNXI, Pacific, Northwest, X-Ray, Radiology, Medical, Supply">
+  <meta name="author" content="Alex Stevens">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../navstyle.css">
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<!-- body -->
-
 <body>
-   <!-- nav -->
+    <!-- nav -->
     <nav class="nav affix">
       <div class="container">
         <div class="logo">
@@ -42,9 +45,8 @@
     </nav>
 
     <!-- shopping cart -->
-<button id="fixedbutton" class="open-button" onclick="openForm()"
-  title="Click here to view your virtual shopping list"><img src="../images/shop.png"></button>
-    
+    <button id="fixedbutton" class="open-button" onclick="openForm()"
+    title="Click here to view your virtual shopping list"><img src="../images/shop.png"></button>
     <div class="shop-popup" id="myForm">
       <form action="*" class="form-container">
         <div id="items_table">
@@ -55,54 +57,50 @@
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
+    <section id="contact">
+    <br><br><br><br>
+      <h1>CONTACT</h1><br> 
 
-<section id="contact">
-  <br><br><br><br>
+      <div class="contact-container">
+        <form action="https://formspree.io/xqkyzqkz" method="POST">
 
-<h1>CONTACT</h1><br> 
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
 
-<div class="contact-container">
-  <form action="https://formspree.io/xqkyzqkz" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
+          <label for="_replyto">Email:</label>
+          <input type="text" id="_replyto" name="_replyto" placeholder="Your email..">
 
-    <label for="_replyto">Email:</label>
-    <input type="text" id="_replyto" name="_replyto" placeholder="Your email..">
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="australia">Other International</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
 
-    <label for="country">Country:</label>
-    <select id="country" name="country">
-      <option value="australia">Other International</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+          <label for="subject">Message:</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-    <label for="subject">Message:</label>
-    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          <div class="center"><input type="submit" value="Send"></div>
 
-    <input type="submit" value="Send">
-  </form>
-</div>
-<br><br>
-
-
-</section>
-
-<footer class="footer">
-  <div class="row">
-    <div class="col">
-      <div class="call">
-        <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle">1-800-827-9729</a>
-        </h4>
+        </form>
       </div>
-    </div>
-  </div>
+      <br><br>
+    </section>
 
-  <div class="row">
-    <div class="col padding-0 HM">
-      <a href="../index.html" class="footer"><img src="../images/PNXIFooter.png" alt="Footer Logo" height="150"
-          width="300" class="footer"></a>
-    </div>
-
+    <footer class="footer">
+      <div class="row">
+        <div class="col">
+          <div class="call">
+            <h4>Call <span class="special">NOW</span> <a href="tel:1-800-827-9729" class="nostyle" rel="nofollow">1-800-827-9729</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col padding-0 HM">
+          <a href="../index.html" class="footer"><img src="../images/PNXIFooter.png" alt="Footer Logo" height="150"
+              width="300" class="footer"></a>
+        </div>
         <div class="col padding-0">
           <a href="information.html#order"><button type="button" class="btn btn-lg btn-block">Order</button></a>
           <ul class="footer HM">
@@ -111,36 +109,28 @@
             <li><a href="pages/information.html#setup">Payment Methods</a></li>
           </ul>
         </div>
+        <div class="col padding-0">
+          <a href="information.html#delivery"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
+          <ul class="footer HM">
+            <li><a href="information.html#canc-ret">Cancellations/Returns</a></li>
+            <li><a href="information.html#refusal">Refusal of Shipment</a></li>
+            <li><a href="information.html#setup">Setup/Usage</a></li>
+          </ul>
+        </div>
+        <div class="col padding-0">
+          <a href="contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
+          <ul class="footer HM">
+            <li><a href="information.html#warranties">Warranties</a></li>
+            <li><a href="../index.html"></a>©2020 PNXI</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="center">
+          <p class="mobile">©2020 Pacific Northwest X-Ray, Inc.</p>
+        </div>
+    </footer>
 
-    <div class="col padding-0">
-      <a href="information.html#delivery"><button type="button" class="btn btn-lg btn-block">Delivery</button></a>
-      <ul class="footer HM">
-        <li><a href="information.html#canc-ret">Cancellations/Returns</a></li>
-        <li><a href="information.html#refusal">Refusal of Shipment</a></li>
-        <li><a href="information.html#setup">Setup/Usage</a></li>
-      </ul>
-    </div>
-
-    <div class="col padding-0">
-      <a href="contact.html"><button type="button" class="btn btn-lg btn-block">Contact</button></a>
-      <ul class="footer HM">
-        <li><a href="information.html#warranties">Warranties</a></li>
-        <li><a href="../index.html"></a>©2020 PNXI</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="center">
-    <p class="mobile">©2020 Pacific Northwest X-Ray, Inc.</p>
-  </div>
-</footer>
-</div>
-
-
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- required -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
   integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -149,9 +139,5 @@
 <script src="../script.js"></script>
 
 
-
-
-
 </body>
-
 </html>
