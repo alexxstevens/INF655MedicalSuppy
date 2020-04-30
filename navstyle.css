@@ -125,6 +125,9 @@ div.call {
 
 
 @media screen and (max-width:750px) {
+    .home {
+        height: 80vh;
+    }
     .navTrigger {
         display: block;
     }
